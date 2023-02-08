@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 100vh;
+        overflow: hidden;
+      }
+      .leaf {
+        position: absolute;
+        top: -200px;
+        animation: move 8s linear infinite;
+        width: 150px;
+      }
+      @keyframes move {
+        0% {
+          transform: rotate(0deg) translateX(-100px);
+        }
+        100% {
+          transform: rotate(90deg) translateX(200vw);
+        }
+      }
+      .leaf1 {
+        left: -10%;
+        animation-delay: 2s;
+      }
+      .leaf2 {
+        left: 10%;
+        animation-delay: 4s;
+      }
+      .leaf3 {
+        left: -40%;
+        animation-delay: 6s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <img src="img/cat.png" class="leaf leaf1" />
+      <img src="img/cat.png" class="leaf leaf2" />
+      <img src="img/cat.png" class="leaf leaf3" />
+    </div>
+  </body>
+</html>

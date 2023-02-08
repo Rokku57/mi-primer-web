@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: salmon;
+      }
+      p::first-letter {
+        color: teal;
+      }
+      p::before {
+        content: "酗";
+      }
+      p::after {
+        content: "।";
+      }
+      p:hover {
+        color: blueviolet;
+      }
+     
+      div p:nth-child(2) {
+        color: skyblue;
+      }
+      ::placeholder {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hola</p>
+    <div>
+      <p>mundo</p>
+      <p>ahi te</p>
+      <p>voy</p>
+    </div>
+    <input type="name" placeholder="nombre" />
+  </body>
+</html>
